@@ -7,7 +7,8 @@ import './index.css';
 // import Clock from './RenderingElements';
 // import Clock from './LifecycleMethod';
 // import Form from './Form';
-import Toggle from './HandlingEvents'
+//import Toggle from './HandlingEvents'
+import Greeting from './ConditionalRendering';
 
 
 // Components and Props - call CommentComponent file  component within ReactDOM.render(); method as 1st parameter
@@ -15,7 +16,7 @@ import Toggle from './HandlingEvents'
 // State & LifeCycle- call LifeCycleMetods.js file  component
 
 ReactDOM.render(
-    <Toggle />
+    <Greeting isLoggedIn = {true}/>
     ,
   document.getElementById('root')
 );
