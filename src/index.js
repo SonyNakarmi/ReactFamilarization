@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import CommentComponent from './CommentComponent';
-import Clock from './RenderingElements';
+// import App from './App';
+ import reportWebVitals from './reportWebVitals';
+// import CommentComponent from './CommentComponent';
+// import Clock from './RenderingElements';
+import Clock from './LifecycleMethod';
 
 
-// Components and Props - call CommentComponent component within ReactDOM.render(); method as 1st parameter
-// Rendering elements - call RenderingElements component within ReactDOM.render(); method as 1st parameter
+// Components and Props - call CommentComponent file  component within ReactDOM.render(); method as 1st parameter
+// Rendering elements - call RenderingElements file component within ReactDOM.render(); method as 1st parameter
+// State & LifeCycle- call LifeCycleMetods.js file  component
 
 ReactDOM.render(
     <Clock />
