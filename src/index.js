@@ -5,7 +5,9 @@ import './index.css';
  import reportWebVitals from './reportWebVitals';
 // import CommentComponent from './CommentComponent';
 // import Clock from './RenderingElements';
-import Clock from './LifecycleMethod';
+// import Clock from './LifecycleMethod';
+// import Form from './Form';
+import Toggle from './HandlingEvents'
 
 
 // Components and Props - call CommentComponent file  component within ReactDOM.render(); method as 1st parameter
@@ -13,7 +15,7 @@ import Clock from './LifecycleMethod';
 // State & LifeCycle- call LifeCycleMetods.js file  component
 
 ReactDOM.render(
-    <Clock />
+    <Toggle />
     ,
   document.getElementById('root')
 );
