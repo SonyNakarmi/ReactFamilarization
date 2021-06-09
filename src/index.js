@@ -13,7 +13,9 @@ import './index.css';
 //import MailboxRenderer from './Conditional';
 // import Page from './PreventRendering';
 //import Lists from './Lists';
-import NameForm from './ControlledComponents';
+//import NameForm from './ControlledComponents';
+import {Reservation} from './FormElements'
+
 
 // Please import relevant components that you want to view from js files and use them in ReactDOM.render() 
 // method as 1st param. Below is list of some params
@@ -21,11 +23,18 @@ import NameForm from './ControlledComponents';
 // Rendering elements - call RenderingElements file component within ReactDOM.render(); method as 1st parameter
 // State & LifeCycle- call LifeCycleMetods.js file  component
 
-ReactDOM.render(
-    <NameForm/>
-    ,
+ReactDOM.render(   
+    <Reservation />,
   document.getElementById('root')
 );
+
+// Note in react, if we specify value directly in component - it becomes uneditable. So, we can use setTimeout() to 
+// prevent from data being edited for certain time
+// ReactDOM.render(<input value="hi" />, mountNode);
+
+// setTimeout(function() {
+//   ReactDOM.render(<input value={null} />, mountNode);
+// }, 1000);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
@@ -36,4 +45,5 @@ reportWebVitals();
 // 1. Inline if with logical operator - component <MailboxRenderer />, import import MailboxRenderer from './Conditional';
 // 2. StatefulComponent -  <LoginControl />,  import LoginControl from './StatefulComponents';
 // 3. For lists and keys -  <Lists nums={[1,2,3,4,5,6]}/> , import Lists from './Lists';
-// 4. Controlled components to maintain state in React - <NameForm />, 
+// 4. Controlled components to maintain state in React - <NameForm />, import NameForm from './ControlledComponents';
+// 5. Select List - <FlavorForm/>, import {FlavorForm} from './FormElements'
