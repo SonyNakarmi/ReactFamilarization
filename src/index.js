@@ -10,7 +10,8 @@ import './index.css';
 //import Toggle from './HandlingEvents'
 // import Greeting from './ConditionalRendering';
 //import LoginControl from './StatefulComponents';
-import MailboxRenderer from './Conditional';
+//import MailboxRenderer from './Conditional';
+import Page from './PreventRendering';
 
 // Please import relevant components that you want to view from js files and use them in ReactDOM.render() 
 // method as 1st param. Below is list of some params
@@ -19,7 +20,7 @@ import MailboxRenderer from './Conditional';
 // State & LifeCycle- call LifeCycleMetods.js file  component
 
 ReactDOM.render(
-    <MailboxRenderer />
+    <Page />
     ,
   document.getElementById('root')
 );
